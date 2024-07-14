@@ -42,7 +42,7 @@ if (window.opener) {
 
 async function getDiscordProfile(code) {
   try {
-    const response = await axios.post('http://localhost:3000/auth', { code });
+    const response = await axios.post('https://port-0-test-lyl8ynsqc934c8c0.sel5.cloudtype.app/auth', { code });
     return response.data;
   } catch (error) {
     console.error('Error fetching Discord profile:', error);

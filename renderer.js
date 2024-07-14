@@ -2,7 +2,7 @@ const axios = require('axios');
 
 async function login() {
   const clientId = '1144187317486112818';  // 실제 클라이언트 ID로 대체
-  const redirectUri = 'http://localhost:3000/callback';
+  const redirectUri = 'https://test.cloudtype.io/callback';
 
   const authUrl = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=identify`;
   const loginWindow = window.open(authUrl, '_blank', 'width=600,height=800');

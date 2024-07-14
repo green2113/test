@@ -7,7 +7,7 @@ app.use(express.json());
 
 const clientId = '1144187317486112818';
 const clientSecret = 'LuQu2KUbQM5EZm53DCOdzaoUcwYARFzD';
-const redirectUri = 'http://localhost:3000/callback';
+const redirectUri = 'https://test.cloudtype.io/callback';
 
 app.post('/auth', async (req, res) => {
   const { code } = req.body;
